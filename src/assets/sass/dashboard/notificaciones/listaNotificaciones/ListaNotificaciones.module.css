@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.full-width, .full-screen {
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.full-height, .full-screen {
+  min-height: 100vh;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.tarjeta {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.ido {
+  display: none; }
+
+.escondido {
+  visibility: hidden; }
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+/* Colores */
+/* Tamaños Pantallas */
+.contenedor-principal {
+  position: relative;
+  width: 100%;
+  background-color: rgba(220, 220, 220, 0.15); }
+
+.contenedor-notificaciones {
+  position: absolute;
+  height: 100%;
+  top: 5%;
+  overflow-y: scroll;
+  background-color: transparent;
+  padding-bottom: 60px; }
+  .contenedor-notificaciones::-webkit-scrollbar {
+    display: none; }
+
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .contenedor-notificaciones {
+    width: 85%;
+    left: 7.5%; } }
+
+@media screen and (min-width: 1216px) and (max-width: 1408px) {
+  .contenedor-notificaciones {
+    width: 80%;
+    left: 10%; } }
+
+@media screen and (min-width: 1408px) and (max-width: 1900px) {
+  .contenedor-notificaciones {
+    width: 70%;
+    left: 15%; } }
+
+@media screen and (min-width: 1900px) {
+  .contenedor-notificaciones {
+    width: 1050px;
+    left: calc((100% - 1050px) / 2); } }

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.full-width, .full-screen {
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.full-height, .full-screen {
+  min-height: 100vh;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.tarjeta {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.ido {
+  display: none; }
+
+.escondido {
+  visibility: hidden; }
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+/* Colores */
+/* Tamaños Pantallas */
+.contenedor-principal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #F7F7F9;
+  overflow-y: scroll; }
+
+.tarjeta {
+  position: absolute;
+  margin: 50px 0;
+  padding: 30px 0 50px 0; }
+
+.imagen-flecha {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-left: 5%;
+  background-image: url("../../images/flecha-derecha-negra.svg");
+  transform: rotateZ(180deg); }
+
+.contenedor-opcion {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 12.5%;
+  padding-right: 10%; }
+
+.contenedor-genero {
+  height: 90px; }
+
+.imagen-genero {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  margin-top: 15px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.genero-seleccionado {
+  background-color: rgba(94, 218, 255, 0.2); }
+
+.imagen-femenina {
+  background-image: url("../../../assets/images/genero_femenino.svg"); }
+
+.imagen-masculina {
+  background-image: url("../../../assets/images/genero_masculino.svg"); }
+
+label {
+  margin-bottom: 8px; }
+
+.label-genero {
+  height: 20px;
+  position: relative;
+  font-size: 0.85rem; }
+
+input {
+  width: 80%; }
+
+input[type=tel] {
+  width: 160px; }
+
+.texto-error {
+  color: red; }
+
+.boton-registrar {
+  position: relative;
+  width: 70%;
+  margin-top: 40px;
+  margin-left: 15%;
+  padding: 15px 0;
+  color: white;
+  background-color: #4f88e5;
+  letter-spacing: 0.1rem;
+  border: none;
+  font-size: 1.1rem; }
+  .boton-registrar:focus, .boton-registrar:hover {
+    border: none; }
+
+@media only screen and (max-width: 769px) {
+  .tarjeta {
+    width: 90%;
+    left: 5%; }
+  input {
+    width: 90%; }
+  .texto-error {
+    font-size: 0.75rem; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .tarjeta {
+    width: 70%;
+    left: 15%; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1216px) {
+  .tarjeta {
+    width: 60%;
+    left: 20%; } }
+
+@media only screen and (min-width: 1216px) and (max-width: 1408px) {
+  .tarjeta {
+    width: 50%;
+    left: 25%; } }
+
+@media only screen and (min-width: 1408px) {
+  .tarjeta {
+    width: 900px;
+    left: calc((100% - 900px) / 2); }
+  input {
+    width: 70%; }
+  .boton-registrar {
+    font-size: 1.25rem; } }

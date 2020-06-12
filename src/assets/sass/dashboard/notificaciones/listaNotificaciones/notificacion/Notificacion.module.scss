@@ -1,0 +1,165 @@
+@charset"utf-8";
+
+@import"bulma/sass/utilities/initial-variables.sass";
+@import"assets/sass/Main.module.scss";
+
+.contenedor-principal {
+    width: 100%;
+    height: 270px;
+    margin-top: 35px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.contenedor-imagen {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    clip-path: ellipse(140px 200px at 35% 50%);
+    background-color: $primaryColor;
+}
+
+.imagen-resumen-notificacion-invitacion {
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    right: 6%;
+    top: -10%;
+}
+
+.imagen-resumen-notificacion-informe {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 10%;
+}
+
+.contenedor-textos {
+    position: absolute;
+    width: calc(100% - 250px);
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding-left: 20px;
+}
+
+.titulo-notificacion {
+    position: relative;
+    top: 20px;
+    font-size: 1.8rem;
+}
+
+.texto-invitacion-grupo {
+    position: relative;
+    display: block;
+    top: 30px;
+    width: 90%;
+    font-size: 1.4rem;
+}
+
+.texto-informe-disponible {
+    position: relative;
+    display: block;
+    top: 50px;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.contenedor-acciones {
+    position: relative;
+    width: 65%;
+    height: 50px;
+    left: 10%;
+    top: 20%;
+}
+
+.accion {
+    position: relative;
+    height: 100%;    
+    width: 40%;
+    margin-left: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: white;
+
+    &:focus, &:hover {
+        color: white;
+    }
+}
+
+.aceptar {
+    border-color: #0bc141;
+
+    &:focus, &:hover {
+        background-color: #089a33;
+    }
+}
+
+.rechazar {
+    border-color: #ad0505;
+
+    &:focus, &:hover {
+        background-color: #d90707;
+    }
+}
+
+// Desktop
+@media screen and (min-width: $desktop) and (max-width: $widescreen){
+
+    .contenedor-principal {
+        height: 225px;
+    }
+
+    .titulo-notificacion {
+        font-size: 1.5rem;
+    }
+
+    .texto-notificacion {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-acciones {
+        height: 40px;
+    }
+
+    .accion {
+        font-size: 0.9rem;
+    }
+}
+
+// Widescreen
+@media screen and (min-width: $widescreen) and (max-width: $fullhd){
+
+    .contenedor-principal {
+        height: 260px;
+    }
+
+    .titulo-notificacion {
+        font-size: 1.7rem;
+    }
+
+    .texto-notificacion {
+        font-size: 1.3rem;
+    }
+
+    .contenedor-acciones {
+        height: 50px;
+    }
+
+    .accion {
+        font-size: 1.1rem;
+    }
+}
+
+// FullHD
+@media screen and (min-width: $fullhd) {
+
+    .contenedor-acciones {
+        
+    }
+}

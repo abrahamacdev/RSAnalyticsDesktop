@@ -1,0 +1,161 @@
+@charset"utf-8";
+
+@import"../../../../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import"../../Main.module.scss";
+
+$paddingLeftTarjeta: 50px;
+
+.contenedor-principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tarjeta {
+    position: absolute;
+    width: 400px;
+    height: 330px;
+    top: calc((100% - 330px) / 2);
+    left: calc((100% - 400px) / 2);
+}
+
+.tarjeta-invitacion {
+    padding-left: $paddingLeftTarjeta;
+}
+
+.contenedor-input-usuario {
+    margin-top: 70px;
+
+    label {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    input {
+        width: calc(100% - #{$paddingLeftTarjeta} - 40px);
+        height: 50px;
+        font-size: 1.3rem;
+        margin-top: 10px;
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 1.1rem;
+        }
+
+        &::-moz-placeholder { /* Firefox 19+ */
+            font-size: 1.1rem;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+            font-size: 1.1rem;
+        }
+    }
+
+    img {
+        position: relative;
+        top: 5px;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.boton-invitar {
+    position: relative;
+    width: calc(100% - #{$paddingLeftTarjeta});
+    top: 50px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: $primaryColor;
+    color: white;
+}
+
+.contenedor-animacion-carga {
+    position: absolute;
+    width: 40%;
+    height:40%;
+    left: 30%;
+    top: 30%;
+}
+
+.contenedor-animacion-exitosa {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 0%;
+    left: 15%;
+}
+
+.contenedor-animacion-fallida {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    top: 5%;
+    left: 15%;
+}
+
+.texto-resultado-invitacion {
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 10%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (min-width: $desktop) and (max-width: $widescreen){
+
+    .tarjeta {
+        width: 350px;
+        height: 350px;
+        top: calc((100% - 350px) / 2);
+        left: calc((100% - 350px) / 2);
+    }
+
+    .contenedor-input-usuario {
+        margin-top: 90px;
+
+        input {
+            width: calc(100% - #{$paddingLeftTarjeta} - 30px);
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-size: 1rem;
+            }
+    
+            &::-moz-placeholder { /* Firefox 19+ */
+                font-size: 1rem;
+            }
+    
+            &:-moz-placeholder { /* Firefox 18- */
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $widescreen) {
+
+    .contenedor-input-usuario {
+        margin-top: 70px;
+    }
+
+    .boton-invitar {
+        top: 60px;
+    }
+}

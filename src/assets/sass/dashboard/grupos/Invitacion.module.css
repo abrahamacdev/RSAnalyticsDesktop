@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.full-width, .full-screen {
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.full-height, .full-screen {
+  min-height: 100vh;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.tarjeta {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.ido {
+  display: none; }
+
+.escondido {
+  visibility: hidden; }
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+/* Colores */
+/* Tamaños Pantallas */
+.contenedor-principal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.tarjeta {
+  position: absolute;
+  width: 400px;
+  height: 330px;
+  top: calc((100% - 330px) / 2);
+  left: calc((100% - 400px) / 2); }
+
+.tarjeta-invitacion {
+  padding-left: 50px; }
+
+.contenedor-input-usuario {
+  margin-top: 70px; }
+  .contenedor-input-usuario label {
+    font-size: 1.1rem;
+    font-weight: bold; }
+  .contenedor-input-usuario input {
+    width: calc(100% - 50px - 40px);
+    height: 50px;
+    font-size: 1.3rem;
+    margin-top: 10px; }
+    .contenedor-input-usuario input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      font-size: 1.1rem; }
+    .contenedor-input-usuario input::-moz-placeholder {
+      /* Firefox 19+ */
+      font-size: 1.1rem; }
+    .contenedor-input-usuario input:-moz-placeholder {
+      /* Firefox 18- */
+      font-size: 1.1rem; }
+  .contenedor-input-usuario img {
+    position: relative;
+    top: 5px;
+    left: 25px;
+    width: 20px;
+    height: 20px; }
+
+.boton-invitar {
+  position: relative;
+  width: calc(100% - 50px);
+  top: 50px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #4f88e5;
+  color: white; }
+
+.contenedor-animacion-carga {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 30%;
+  top: 30%; }
+
+.contenedor-animacion-exitosa {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 0%;
+  left: 15%; }
+
+.contenedor-animacion-fallida {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  top: 5%;
+  left: 15%; }
+
+.texto-resultado-invitacion {
+  position: absolute;
+  width: 80%;
+  top: 60%;
+  left: 10%;
+  font-size: 1.5rem;
+  text-align: center; }
+
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .tarjeta {
+    width: 350px;
+    height: 350px;
+    top: calc((100% - 350px) / 2);
+    left: calc((100% - 350px) / 2); }
+  .contenedor-input-usuario {
+    margin-top: 90px; }
+    .contenedor-input-usuario input {
+      width: calc(100% - 50px - 30px); }
+      .contenedor-input-usuario input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        font-size: 1rem; }
+      .contenedor-input-usuario input::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 1rem; }
+      .contenedor-input-usuario input:-moz-placeholder {
+        /* Firefox 18- */
+        font-size: 1rem; } }
+
+@media screen and (min-width: 1216px) {
+  .contenedor-input-usuario {
+    margin-top: 70px; }
+  .boton-invitar {
+    top: 60px; } }

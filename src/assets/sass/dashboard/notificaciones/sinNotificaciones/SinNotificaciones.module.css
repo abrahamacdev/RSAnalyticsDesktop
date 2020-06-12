@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.full-width, .full-screen {
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.full-height, .full-screen {
+  min-height: 100vh;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.tarjeta {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.ido {
+  display: none; }
+
+.escondido {
+  visibility: hidden; }
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+/* Colores */
+/* Tamaños Pantallas */
+@font-face {
+  font-family: 'swanSeaItalic';
+  src: url("../../../../fonts/SwanseaItalic-AwqD.ttf"); }
+
+.contenedor-principal {
+  position: relative;
+  width: 100%; }
+
+.contenedor-animacion {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  top: 5%;
+  left: 20%; }
+
+.contenedor-texto {
+  position: relative;
+  width: 80%;
+  left: 10%; }
+  .contenedor-texto p {
+    font-size: 2.3rem;
+    text-align: center; }
+  .contenedor-texto button {
+    position: relative;
+    width: 350px;
+    left: calc((100% - 350px) / 2);
+    margin-top: 70px;
+    padding: 30px 0;
+    font-family: 'swanSeaItalic';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: white;
+    color: black;
+    border: 1px solid #f77408;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    outline: none; }
+    .contenedor-texto button:hover {
+      background-color: #f77408;
+      box-shadow: 5px 10px 20px #ae5315;
+      color: #fff;
+      font-weight: bold;
+      transform: translateY(-5px); }
+
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .contenedor-texto > p {
+    font-size: 1.8rem; } }

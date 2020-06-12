@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.full-width, .full-screen {
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.full-height, .full-screen {
+  min-height: 100vh;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.tarjeta {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.ido {
+  display: none; }
+
+.escondido {
+  visibility: hidden; }
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+/* Colores */
+/* Tamaños Pantallas */
+.contenedor-principal {
+  position: relative;
+  width: 100%;
+  background-color: rgba(220, 220, 220, 0.15); }
+
+.contenedor-informes {
+  position: absolute;
+  height: 100%;
+  top: 5%;
+  overflow-y: scroll;
+  background-color: transparent;
+  padding-bottom: 60px; }
+  .contenedor-informes::-webkit-scrollbar {
+    display: none; }
+
+.solicitar-informe {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  bottom: 32px;
+  right: 32px;
+  background-position: center;
+  background-color: #6ae3c0;
+  box-shadow: 5px 15px 15px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all ease-in-out 300ms; }
+  .solicitar-informe img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 16px; }
+  .solicitar-informe:hover {
+    box-shadow: 10px 25px 20px -10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); }
+
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .contenedor-informes {
+    width: 85%;
+    left: 7.5%; } }
+
+@media screen and (min-width: 1216px) and (max-width: 1408px) {
+  .contenedor-informes {
+    width: 80%;
+    left: 10%; } }
+
+@media screen and (min-width: 1408px) and (max-width: 1900px) {
+  .contenedor-informes {
+    width: 70%;
+    left: 15%; } }
+
+@media screen and (min-width: 1900px) {
+  .contenedor-informes {
+    width: 1050px;
+    left: calc((100% - 1050px) / 2); } }

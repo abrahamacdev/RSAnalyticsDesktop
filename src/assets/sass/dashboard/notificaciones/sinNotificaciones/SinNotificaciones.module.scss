@@ -1,0 +1,68 @@
+@charset"utf-8";
+
+@import"bulma/sass/utilities/initial-variables.sass";
+@import"assets/sass/Main.module.scss";
+
+@font-face {
+    font-family: 'swanSeaItalic';
+    src: url('../../../../fonts/SwanseaItalic-AwqD.ttf')
+}
+
+.contenedor-principal {
+    position: relative;    
+    width: 100%;
+}
+
+.contenedor-animacion {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    top: 5%;
+    left: 20%;
+}
+
+.contenedor-texto {
+    position: relative;
+    width: 80%;
+    left: 10%;
+
+    p {    
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    $anchoBotonRecargar: 350px;
+    button {
+        position: relative;
+        width: $anchoBotonRecargar;
+        left: calc((100% - #{$anchoBotonRecargar}) / 2);
+        margin-top: 70px;
+        padding: 30px 0;
+        font-family: 'swanSeaItalic';
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: white;
+        color: black;
+        border: 1px solid $secondaryColor;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            background-color: $secondaryColor;
+            box-shadow: 5px 10px 20px $secondaryDarkColor;
+            color: #fff;
+            font-weight: bold;
+            transform: translateY(-5px);
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) and (max-width: $widescreen){
+
+    .contenedor-texto > p {
+        font-size: 1.8rem;
+    }
+}

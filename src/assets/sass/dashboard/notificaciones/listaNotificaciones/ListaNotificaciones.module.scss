@@ -1,0 +1,59 @@
+@charset"utf-8";
+
+@import"~bulma/sass/utilities/initial-variables.sass";
+@import"assets/sass/Main.module.scss";
+
+.contenedor-principal {
+    position: relative;
+    width: 100%;
+    background-color: rgba(220,220,220,0.15);                                                                                                                                                                                                                                                                                                                            
+}
+
+.contenedor-notificaciones {
+    position: absolute;
+    height: 100%;
+    top: 5%;
+    overflow-y: scroll;
+    background-color: transparent;
+    padding-bottom: 60px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+// Desktop
+@media screen and (min-width: $desktop) and (max-width: $widescreen){
+
+    .contenedor-notificaciones {
+        width: 85%;
+        left: 7.5%;
+    }
+
+}
+
+// Widescreen
+@media screen and (min-width: $widescreen) and (max-width: $fullhd){
+
+    .contenedor-notificaciones {
+        width: 80%;
+        left: 10%;
+    }
+}
+
+// Fullhd
+@media screen and (min-width: $fullhd)  and (max-width: $full4k){
+
+    .contenedor-notificaciones {
+        width: 70%;
+        left: 15%;
+    }
+}
+
+// 4k
+@media screen and (min-width: $full4k){
+    .contenedor-notificaciones {
+        width: 1050px;
+        left: calc((100% - 1050px) / 2);
+    }
+}

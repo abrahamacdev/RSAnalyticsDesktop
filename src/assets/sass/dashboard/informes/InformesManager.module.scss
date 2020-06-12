@@ -1,0 +1,158 @@
+@charset"utf-8";
+
+@import"bulma/sass/utilities/initial-variables.sass";
+@import"assets/sass/Main.module.scss";
+
+.contenedor-principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-tarjeta {
+    position: absolute;
+    height: 600px;
+    padding-top: 50px;
+    top: calc((100% - 600px) / 2);
+}
+
+.contenedor-opcion {
+    position: relative;
+    width: 100%;
+    padding-left: 15%;
+    margin-bottom: 40px;
+}
+
+.label-select-dialogo {
+    position: relative;
+    top: 20%;
+    font-size: 1.3rem;
+}
+
+.select-dialogo {
+    width: 50%;
+    height: 45px;
+    position: relative;
+    margin-top: 10px;
+    top: 20%;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    font-size: 1.2rem;
+
+    &:after {
+        content:"";
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: #f0f0f0 transparent transparent transparent;
+        position: absolute;
+        top: 16px;
+        right: 10px;
+    }
+    &:hover {
+        background-color: darken(#f0f0f0, 1);
+    }
+    &:active, &.active {
+        background-color: darken(#f0f0f0, 3);
+        &:after {
+        top: 9px;
+        border-color: transparent transparent #f0f0f0 transparent;
+        }
+    }
+}
+
+.input-municipio {
+    width: 70%;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    padding-left: 10px;
+
+    &:focus {
+        border: 2px solid $primaryDarkColor;
+    }
+}
+
+.opciones-municipio {
+    @extend .tarjeta;
+    width: calc(70% - 10px);
+    position: static;
+    overflow: hidden;
+    margin-left: 5px;
+
+    p {
+        visibility: inherit;
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+        line-height: 30px;
+        
+        &:hover {
+            color: white;
+            background-color: $primaryDarkColor;
+        }
+    }
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.solicitar {
+    position: absolute;
+    height: 50px;
+    width: 400px;
+    left: calc((100% - 400px) / 2);
+    bottom: 50px;
+    background-color: $primaryColor;
+    color: white;
+    border: 1px solid;
+    font-size: 1.2rem;
+
+    &:hover {
+        background-color: $primaryDarkColor;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &:focus {
+        outline: 0
+    }
+}
+
+// Desktop
+@media screen and (min-width: $desktop) and (max-width: $widescreen){
+
+    .contenedor-tarjeta {
+        width: 550px;
+        left: calc((100% - 550px) / 2);
+    }
+
+}
+
+// Widescreen
+@media screen and (min-width: $widescreen) and (max-width: $fullhd){
+
+    .contenedor-tarjeta {
+        width: 600px;
+        left: calc((100% - 600px) / 2);
+    }
+
+}
+
+// Full HD
+@media screen and (min-width: $fullhd) {
+
+    .contenedor-tarjeta {
+        width: 650px;
+        left: calc((100% - 650px) / 2);
+    }
+
+}

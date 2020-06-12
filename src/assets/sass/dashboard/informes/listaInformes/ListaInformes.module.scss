@@ -1,0 +1,84 @@
+@import"~bulma/sass/utilities/initial-variables.sass";
+@import"assets/sass/Main.module.scss";
+
+.contenedor-principal {
+    position: relative;
+    width: 100%;
+    background-color: rgba(220,220,220,0.15);                                                                                                                                                                                                                                                                                                                            
+}
+
+.contenedor-informes {
+    position: absolute;
+    height: 100%;
+    top: 5%;
+    overflow-y: scroll;
+    background-color: transparent;
+    padding-bottom: 60px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.solicitar-informe {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    bottom: 32px;
+    right: 32px;
+    background-position: center;
+    background-color: $accentColor;
+    box-shadow: 5px 15px 15px -10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+
+    img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 16px;
+        left: 16px;
+    }
+
+    &:hover {
+        box-shadow: 10px 25px 20px -10px rgba(0,0,0,0.2);
+        transform: translateY(-5px);
+    }
+}
+
+// Desktop
+@media screen and (min-width: $desktop) and (max-width: $widescreen){
+
+    .contenedor-informes {
+        width: 85%;
+        left: 7.5%;
+    }
+
+}
+
+// Widescreen
+@media screen and (min-width: $widescreen) and (max-width: $fullhd){
+
+    .contenedor-informes {
+        width: 80%;
+        left: 10%;
+    }
+}
+
+// Fullhd
+@media screen and (min-width: $fullhd)  and (max-width: $full4k){
+
+    .contenedor-informes {
+        width: 70%;
+        left: 15%;
+    }
+}
+
+// 4k
+@media screen and (min-width: $full4k){
+    .contenedor-informes {
+        width: 1050px;
+        left: calc((100% - 1050px) / 2);
+    }
+}

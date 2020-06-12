@@ -1,0 +1,144 @@
+@charset "UTF-8";
+.full-width, .full-screen {
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.full-height, .full-screen {
+  min-height: 100vh;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.tarjeta {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.ido {
+  display: none; }
+
+.escondido {
+  visibility: hidden; }
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+/* Colores */
+/* Tamaños Pantallas */
+.contenedor-principal {
+  width: 100%;
+  height: 270px;
+  margin-top: 35px;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.contenedor-imagen {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  clip-path: ellipse(140px 200px at 35% 50%);
+  background-color: #4f88e5; }
+
+.imagen-resumen-notificacion-invitacion {
+  position: absolute;
+  width: 100%;
+  height: 160%;
+  right: 6%;
+  top: -10%; }
+
+.imagen-resumen-notificacion-informe {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 10%; }
+
+.contenedor-textos {
+  position: absolute;
+  width: calc(100% - 250px);
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding-left: 20px; }
+
+.titulo-notificacion {
+  position: relative;
+  top: 20px;
+  font-size: 1.8rem; }
+
+.texto-invitacion-grupo {
+  position: relative;
+  display: block;
+  top: 30px;
+  width: 90%;
+  font-size: 1.4rem; }
+
+.texto-informe-disponible {
+  position: relative;
+  display: block;
+  top: 50px;
+  width: 90%;
+  font-size: 1.5rem; }
+
+.contenedor-acciones {
+  position: relative;
+  width: 65%;
+  height: 50px;
+  left: 10%;
+  top: 20%; }
+
+.accion {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  margin-left: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  background-color: white; }
+  .accion:focus, .accion:hover {
+    color: white; }
+
+.aceptar {
+  border-color: #0bc141; }
+  .aceptar:focus, .aceptar:hover {
+    background-color: #089a33; }
+
+.rechazar {
+  border-color: #ad0505; }
+  .rechazar:focus, .rechazar:hover {
+    background-color: #d90707; }
+
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .contenedor-principal {
+    height: 225px; }
+  .titulo-notificacion {
+    font-size: 1.5rem; }
+  .texto-notificacion {
+    font-size: 1.1rem; }
+  .contenedor-acciones {
+    height: 40px; }
+  .accion {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 1216px) and (max-width: 1408px) {
+  .contenedor-principal {
+    height: 260px; }
+  .titulo-notificacion {
+    font-size: 1.7rem; }
+  .texto-notificacion {
+    font-size: 1.3rem; }
+  .contenedor-acciones {
+    height: 50px; }
+  .accion {
+    font-size: 1.1rem; } }

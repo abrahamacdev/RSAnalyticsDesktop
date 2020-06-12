@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.full-screen {
+    @extend .full-width;
+    @extend .full-height;
+}
+
+.full-width {
+    min-width: 100vw;
+    width: 100vw;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100vh;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.ido {
+    display: none;
+}
+
+.escondido {
+    visibility: hidden;
+}
+
+/*$primaryColor: #03A696;
+$primaryDarkColor: #025159;
+$accentColor: #F20505;
+$secondaryColor: #F28705;
+$secondaryDarkColor: #F25D27;*/
+
+/* Colores */
+$primaryColor: #4f88e5;
+$primaryDarkColor: #5675a7;
+$accentColor: #6ae3c0;
+$secondaryColor: #f77408;
+$secondaryDarkColor: #ae5315;
+
+
+/* Tamaños Pantallas */
+$full4k: 1900px;
