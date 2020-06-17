@@ -56,11 +56,8 @@ class SinGrupo extends Component {
     registrarNuevoGrupo = () => {
         const nombreGrupo = document.getElementById("inputNombreGrupo").value.trim();
 
-        console.log(`Nombre: "${nombreGrupo}"`);
-
         // El nombre del grupo no es válido
         if(!this.comprobarNombreGrupoValido(nombreGrupo)) return;
-
 
         // TODO Comprobar que el nombre no exista y crear el grupo
         const url = Constantes.PROTOCOLO_ESTANDAR + "://" + Constantes.HOST_API + Constantes.RUTA_GRUPO + Constantes.REGISTRO_GRUPO_ENDPOINT;
@@ -80,10 +77,26 @@ class SinGrupo extends Component {
                 this.props.onRecargarGrupo();
             })
             .catch(error => {
-                
-                // Manejar error
-            });
 
+                const status = error.response.status;
+                
+                let msgError = null;
+
+                // Ya existe el grupo
+                if(status == 409){
+                    msgError = 'El grupo ya existe';
+                }
+
+                // Error desconocido
+                else {
+                    msgError = 'Ocurrió un error desconocido';
+                }
+
+                // Actualizamos el mensaje de error
+                this.setState({
+                    error: msgError
+                });
+            });
     }
 
     render = () => {
