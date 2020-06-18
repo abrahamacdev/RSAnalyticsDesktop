@@ -7,6 +7,8 @@ import loginStyles from '../../assets/sass/login/Login.module.css';
 
 import Constantes from '../../utils/Constantes';
 
+import IconoLogin from 'assets/images/flecha-derecha-blanca.svg';
+
 class Login extends Component {
 
     constructor(props){
@@ -159,7 +161,6 @@ class Login extends Component {
 
         // Contenedor Boton Login
         let clasesDivLogin = [loginStyles['contenedor-boton-login']];
-        let clasesTextoLogin = [loginStyles['texto-login']];
         let clasesIconoLogin = [loginStyles['icono-login']];
 
         // Mensaje de error (error en la combinacion)
@@ -211,8 +212,8 @@ class Login extends Component {
                             </div>
 
                             <div className={clasesDivLogin.join(' ')} onClick={this.hacerLogin}>
-                                <p className={clasesTextoLogin.join(' ')}>Log In</p>
-                                <div className={clasesIconoLogin.join(' ')}></div>    
+                                <span>Log In</span>
+                                <img src={IconoLogin} className={clasesIconoLogin.join(' ')}/>    
                             </div>
 
                             <button className={claseBotonResgitroTouch.join(' ')} onClick={this.props.onRegistrar}>Registrarme</button>

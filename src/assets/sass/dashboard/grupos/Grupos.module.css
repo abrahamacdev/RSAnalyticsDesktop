@@ -66,11 +66,12 @@ $secondaryDarkColor: #F25D27;*/
   transition: 0.3s;
   cursor: pointer;
   outline: none; }
-  .boton-abandonar-grupo:focus, .boton-abandonar-grupo:hover {
-    box-shadow: inset -60px 0 0 0 #5675a7, inset 60px 0 0 0 #5675a7;
-    transition: box-shadow 0.4s ease-in-out, color 0.6s ease;
-    color: white;
-    font-weight: bold; }
+
+.boton-abandonar-grupo:focus, .boton-abandonar-grupo:hover {
+  box-shadow: inset -60px 0 0 0 #5675a7, inset 60px 0 0 0 #5675a7;
+  transition: box-shadow 0.4s ease-in-out, color 0.6s ease;
+  color: white;
+  font-weight: bold; }
 
 .contenedor-participantes {
   position: absolute;
@@ -83,8 +84,9 @@ $secondaryDarkColor: #F25D27;*/
   overflow-y: scroll;
   align-content: flex-start;
   justify-content: center; }
-  .contenedor-participantes::-webkit-scrollbar {
-    width: 10px; }
+
+.contenedor-participantes::-webkit-scrollbar {
+  width: 10px; }
 
 .contenedor-participante-unico {
   min-height: 400px;
@@ -142,15 +144,17 @@ $secondaryDarkColor: #F25D27;*/
   box-shadow: 5px 15px 15px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all ease-in-out 300ms; }
-  .boton-invitar img {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 16px;
-    left: 16px; }
-  .boton-invitar:hover {
-    box-shadow: 10px 25px 20px -10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); }
+
+.boton-invitar img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  left: 16px; }
+
+.boton-invitar:hover {
+  box-shadow: 10px 25px 20px -10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); }
 
 @media only screen and (min-width: 1024px) and (max-width: 1216px) {
   .texto-nombre-grupo {
@@ -163,8 +167,8 @@ $secondaryDarkColor: #F25D27;*/
   .boton-abandonar-grupo {
     width: 140px;
     font-size: 1rem; }
-    .boton-abandonar-grupo:focus, .boton-abandonar-grupo:hover {
-      box-shadow: inset -70px 0 0 0 #5675a7, inset 70px 0 0 0 #5675a7; } }
+  .boton-abandonar-grupo:focus, .boton-abandonar-grupo:hover {
+    box-shadow: inset -70px 0 0 0 #5675a7, inset 70px 0 0 0 #5675a7; } }
 
 @media only screen and (min-width: 1408px) {
   .boton-abandonar-grupo {
@@ -172,5 +176,5 @@ $secondaryDarkColor: #F25D27;*/
     height: 55px;
     top: calc((100% - 55px) / 2);
     font-size: 1.1rem; }
-    .boton-abandonar-grupo:focus, .boton-abandonar-grupo:hover {
-      box-shadow: inset -75px 0 0 0 #5675a7, inset 75px 0 0 0 #5675a7; } }
+  .boton-abandonar-grupo:focus, .boton-abandonar-grupo:hover {
+    box-shadow: inset -75px 0 0 0 #5675a7, inset 75px 0 0 0 #5675a7; } }

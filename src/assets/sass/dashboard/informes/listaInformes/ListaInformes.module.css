@@ -44,8 +44,9 @@ $secondaryDarkColor: #F25D27;*/
   overflow-y: scroll;
   background-color: transparent;
   padding-bottom: 60px; }
-  .contenedor-informes::-webkit-scrollbar {
-    display: none; }
+
+.contenedor-informes::-webkit-scrollbar {
+  display: none; }
 
 .solicitar-informe {
   position: fixed;
@@ -59,15 +60,17 @@ $secondaryDarkColor: #F25D27;*/
   box-shadow: 5px 15px 15px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all ease-in-out 300ms; }
-  .solicitar-informe img {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 16px;
-    left: 16px; }
-  .solicitar-informe:hover {
-    box-shadow: 10px 25px 20px -10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); }
+
+.solicitar-informe img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 16px; }
+
+.solicitar-informe:hover {
+  box-shadow: 10px 25px 20px -10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); }
 
 @media screen and (min-width: 1024px) and (max-width: 1216px) {
   .contenedor-informes {

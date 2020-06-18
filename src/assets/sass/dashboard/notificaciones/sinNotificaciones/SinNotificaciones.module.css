@@ -51,32 +51,35 @@ $secondaryDarkColor: #F25D27;*/
   position: relative;
   width: 80%;
   left: 10%; }
-  .contenedor-texto p {
-    font-size: 2.3rem;
-    text-align: center; }
-  .contenedor-texto button {
-    position: relative;
-    width: 350px;
-    left: calc((100% - 350px) / 2);
-    margin-top: 70px;
-    padding: 30px 0;
-    font-family: 'swanSeaItalic';
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: white;
-    color: black;
-    border: 1px solid #f77408;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease 0s;
-    cursor: pointer;
-    outline: none; }
-    .contenedor-texto button:hover {
-      background-color: #f77408;
-      box-shadow: 5px 10px 20px #ae5315;
-      color: #fff;
-      font-weight: bold;
-      transform: translateY(-5px); }
+
+.contenedor-texto p {
+  font-size: 2.3rem;
+  text-align: center; }
+
+.contenedor-texto button {
+  position: relative;
+  width: 350px;
+  left: calc((100% - 350px) / 2);
+  margin-top: 70px;
+  padding: 30px 0;
+  font-family: 'swanSeaItalic';
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: white;
+  color: black;
+  border: 1px solid #f77408;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none; }
+
+.contenedor-texto button:hover {
+  background-color: #f77408;
+  box-shadow: 5px 10px 20px #ae5315;
+  color: #fff;
+  font-weight: bold;
+  transform: translateY(-5px); }
 
 @media screen and (min-width: 1024px) and (max-width: 1216px) {
   .contenedor-texto > p {

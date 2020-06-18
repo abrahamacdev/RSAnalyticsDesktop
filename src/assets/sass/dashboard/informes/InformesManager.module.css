@@ -65,22 +65,26 @@ $secondaryDarkColor: #F25D27;*/
   background-color: #f0f0f0;
   padding: 8px 15px;
   font-size: 1.2rem; }
-  .select-dialogo:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-color: #f0f0f0 transparent transparent transparent;
-    position: absolute;
-    top: 16px;
-    right: 10px; }
-  .select-dialogo:hover {
-    background-color: #ededed; }
-  .select-dialogo:active, .select-dialogo.active {
-    background-color: #e8e8e8; }
-    .select-dialogo:active:after, .select-dialogo.active:after {
-      top: 9px;
-      border-color: transparent transparent #f0f0f0 transparent; }
+
+.select-dialogo:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #f0f0f0 transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px; }
+
+.select-dialogo:hover {
+  background-color: #ededed; }
+
+.select-dialogo:active, .select-dialogo.active {
+  background-color: #e8e8e8; }
+
+.select-dialogo:active:after, .select-dialogo.active:after {
+  top: 9px;
+  border-color: transparent transparent #f0f0f0 transparent; }
 
 .input-municipio {
   width: 70%;
@@ -91,23 +95,26 @@ $secondaryDarkColor: #F25D27;*/
   border: 1px solid #d0d0d0;
   border-radius: 3px;
   padding-left: 10px; }
-  .input-municipio:focus {
-    border: 2px solid #5675a7; }
+
+.input-municipio:focus {
+  border: 2px solid #5675a7; }
 
 .opciones-municipio {
   width: calc(70% - 10px);
   position: static;
   overflow: hidden;
   margin-left: 5px; }
-  .opciones-municipio p {
-    visibility: inherit;
-    width: 100%;
-    height: 30px;
-    padding-left: 10px;
-    line-height: 30px; }
-    .opciones-municipio p:hover {
-      color: white;
-      background-color: #5675a7; }
+
+.opciones-municipio p {
+  visibility: inherit;
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px; }
+
+.opciones-municipio p:hover {
+  color: white;
+  background-color: #5675a7; }
 
 .error {
   border: 1px solid red; }
@@ -122,12 +129,15 @@ $secondaryDarkColor: #F25D27;*/
   color: white;
   border: 1px solid;
   font-size: 1.2rem; }
-  .solicitar:hover {
-    background-color: #5675a7; }
-  .solicitar:active {
-    transform: translateY(1px); }
-  .solicitar:focus {
-    outline: 0; }
+
+.solicitar:hover {
+  background-color: #5675a7; }
+
+.solicitar:active {
+  transform: translateY(1px); }
+
+.solicitar:focus {
+  outline: 0; }
 
 @media screen and (min-width: 1024px) and (max-width: 1216px) {
   .contenedor-tarjeta {

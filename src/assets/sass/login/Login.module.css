@@ -121,31 +121,22 @@ input:focus {
   width: 90%;
   margin-top: 15%;
   margin-left: 2.5%;
+  padding-left: 36px;
   background: linear-gradient(to right, #049bc9 0%, #11deed 100%);
   vertical-align: middle;
   border-radius: 4px;
   text-align: left;
   font-weight: bold;
   color: white;
-  overflow: hidden; }
-
-.texto-login {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  transform: translateY(30%);
-  margin-left: 10%; }
+  overflow: hidden;
+  display: flex;
+  align-items: center; }
 
 .icono-login {
   position: absolute;
-  display: inline-block;
-  width: 18px;
-  height: 100%;
-  right: 0;
-  margin-right: 10%;
-  background-image: url("../../images/flecha-derecha-blanca.svg");
-  background-position: center;
-  background-repeat: no-repeat; }
+  right: 36px;
+  width: 24px;
+  height: 24px; }
 
 .mensaje-combinacion-invalida {
   position: relative;
